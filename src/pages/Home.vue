@@ -16,6 +16,7 @@
 
 <style scoped>
 .home-container {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;

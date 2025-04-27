@@ -16,6 +16,7 @@
   
   <style scoped>
   header {
+    font-family: 'Poppins', sans-serif;
     background-color: #0d47a1;
     color: white;
     padding: 1rem;

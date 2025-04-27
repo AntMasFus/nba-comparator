@@ -20,3 +20,14 @@ export async function buscarJugador(nombre) {
     throw error;
   }
 }
+
+export const obtenerEstadisticasJugador = async (playerId) => {
+  try {
+    const response = await fetch(`https://api.balldontlie.io/v1/stats?player_ids[]=${playerId}`);
+    const data = await response.json();
+    return data.data.length > 0 ? data.data[0] : {};  // Retorna las estadísticas del jugador
+  } catch (error) {
+    console.error('Error al obtener estadísticas del jugador:', error);
+    return {};
+  }
+};
