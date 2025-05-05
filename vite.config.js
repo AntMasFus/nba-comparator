@@ -5,11 +5,12 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     proxy: {
-      '/api': {
-        target: 'https://api.balldontlie.io',   // Fíjate que es "api.balldontlie.io" (no "www")
+      // Solo redirige rutas específicas que necesitan CORS (como stats o players)
+      '/api/v1': {
+        target: 'https://api.balldontlie.io',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
-  },
-});
+        rewrite: (path) => path.replace(/^\/api\/v1/, ''),
+      }
+    }
+  }
+})

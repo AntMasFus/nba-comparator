@@ -4,7 +4,8 @@
       <nav>
         <ul>
           <li><router-link to="/">Inicio</router-link></li>
-          <li><router-link to="/comparador">Comparador</router-link></li>
+          <li><router-link to="/comparador">Comparador Jugadores</router-link></li>
+          <li><router-link to="/comparador-equipos">Comparador Equipos</router-link></li>
           <li><router-link to="/estadisticas">Estadísticas</router-link></li>
         </ul>
       </nav>

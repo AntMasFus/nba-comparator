@@ -1,7 +1,7 @@
 <template>
   <div class="comparador-container">
     <h1>Comparador de jugadores</h1>
-    <p>Compara jugadores, equipos y estadísticas de la NBA de manera sencilla y visual.</p>
+    <p>Compara jugadores y sus estadísticas de la NBA de manera sencilla y visual.</p>
 
     <div class="inputs-container">
       <!-- Input y autocompletado jugador 1 -->
