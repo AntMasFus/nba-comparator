@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/v1/players';  // Ahora sí usa el proxy de vite
+const API_URL = 'https://api.balldontlie.io/v1/players';  
 const API_KEY = "6b59b063-340f-4c4f-97db-08336e0c128e";
 
 // Función para buscar jugadores por nombre

@@ -53,7 +53,6 @@
     <div v-if="jugador1Seleccionado && jugador2Seleccionado" class="resultados">
       <div class="jugador">
         <h3>{{ jugador1Seleccionado.first_name }} {{ jugador1Seleccionado.last_name }}</h3>
-        <p>ID: {{ jugador1Seleccionado.id }}</p>
         <p>Altura: {{ jugador1Seleccionado.height }} pies</p>
         <p>Peso: {{ jugador1Seleccionado.weight }} libras</p>
         <p>Posición: {{ jugador1Seleccionado.position || 'Desconocida' }}</p>
